@@ -1,10 +1,10 @@
-PROJECT_NAME := SampleApp
+PROJECT_NAME := SafariViewSample
 PROJECT_GIT_DIR := .
 
 .PHONY: bootstrap
 bootstrap:
 	mint bootstrap
-	cp -pR .githooks/* .git/hooks
+	# cp -pR .githooks/* .git/hooks
 
 .PHONY: gen-project
 gen-project:

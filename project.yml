@@ -1,4 +1,4 @@
-name: SampleApp
+name: SafariViewSample
 options:
   xcodeVersion: "15.0"
   deploymentTarget:
@@ -10,11 +10,11 @@ settings:
     SWIFT_VERSION: 5.0
 
 packages:
-  SampleApp:
+  SafariViewSample:
     path: .
 
 targets:
-  SampleApp:
+  SafariViewSample:
     type: application
     platform: iOS
     settings:
@@ -40,7 +40,7 @@ targets:
     sources:
       - path: ./App/iOS
     dependencies:
-      - package: SampleApp
+      - package: SafariViewSample
         products:
           - App
     postBuildScripts:
@@ -52,10 +52,10 @@ targets:
           make lint
 
 schemes:
-  SampleApp:
+  SafariViewSample:
     build:
       targets:
-        SampleApp: all
+        SafariViewSample: all
     run:
       config: Debug
     test:

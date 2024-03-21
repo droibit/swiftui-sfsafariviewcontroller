@@ -17,10 +17,10 @@ let debugOtherSwiftFlags = [
 ]
 
 let package = Package(
-    name: "SampleApp",
+    name: "SafariViewSample",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v17),
+        .iOS(.v15),
     ],
     products: [
         .library(
