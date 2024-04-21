@@ -36,7 +36,8 @@ let package = Package(
             dependencies: [
             ],
             swiftSettings: [.unsafeFlags(debugOtherSwiftFlags, .when(configuration: .debug))],
-            plugins: [
+            linkerSettings: [
+                .linkedFramework("SafariServices"),
             ]
         ),
         // .testTarget(
